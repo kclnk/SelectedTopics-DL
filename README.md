@@ -59,11 +59,9 @@ Additional computational metrics:
 
 ```text
 ├── docs
-├── metrics
 ├── models
 ├── notebooks
 ├── ui
-├── outputs
 ├── training_results
 └── README.md
 ```
