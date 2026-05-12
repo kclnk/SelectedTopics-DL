@@ -1,0 +1,12 @@
+torch
+torchvision
+torchaudio
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn
+streamlit
+torchinfo
+thop
+codecarbon
