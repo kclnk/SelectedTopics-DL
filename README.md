@@ -1,4 +1,4 @@
-# Selected Topics: Deep Learning — Course Project
+# Selected Topics: Deep Learning - Course Project
 
 This repository contains the implementation, experiments, trained models, evaluation results, and documentation for the **Selected Topics: Deep Learning** course project.
 
