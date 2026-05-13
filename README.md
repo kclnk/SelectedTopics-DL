@@ -61,9 +61,11 @@ Additional computational metrics:
 ├── docs
 ├── models
 ├── notebooks
+├── results
 ├── ui
-├── training_results
-└── README.md
+├── DL - Project Submission.pdf
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -88,7 +90,7 @@ Additional computational metrics:
 
 # Datasets
 
-## Rice Leaf Disease Dataset
+## Rice Leaf Disease Dataset : https://www.kaggle.com/datasets/maimunulkjisan/rice-leaf-dataset-from-mendeley-data
 
 Classes:
 - Bacterial Blight
@@ -98,7 +100,7 @@ Classes:
 
 ---
 
-## Mango Leaf Disease Dataset
+## Mango Leaf Disease Dataset : https://www.kaggle.com/datasets/aryashah2k/mango-leaf-disease-dataset
 
 Classes:
 - Anthracnose
@@ -136,7 +138,7 @@ cd <repository-folder>
 
 ---
 
-## 2. Create a Virtual Environment (Optional but Recommended)
+## 2. Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
@@ -217,7 +219,7 @@ cd ui
 ## 2. Run the Streamlit Application
 
 ```bash
-streamlit run app.py
+streamlit run py.py
 ```
 
 ---
@@ -237,36 +239,10 @@ The interface allows users to test both trained models directly using leaf image
    - `.jpeg`
    - `.png`
 
-3. Click:
-   
-```text
-Predict
-```
-
-4. The system will display:
+3. The system will display:
    - Predicted disease class
    - Prediction confidence score
    - Uploaded image preview
-
----
-
-# Saved Models
-
-Place trained model weights inside the:
-
-```text
-models/
-```
-
-directory.
-
-Example:
-
-```text
-models/
-├── best_rice_leaf_cnn.pth
-└── best_mango_effb1.pth
-```
 
 ---
 
@@ -285,6 +261,15 @@ The confusion matrix demonstrated near-perfect classification across all mango d
 
 ---
 
+# Final Insight
+
+The custom CNN showed fluctuating learning curves because it was trained from randomly initialized weights, making
+optimization less stable. In contrast, EfficientNet-B1 achieved smoother convergence due to pretrained ImageNet 
+features that provided more stable and generalized feature representations.
+
+---
+
 # Notes
+- Due to the larger size of the two dataset, and the limits applied by GitHub on uploaded files size limits, only links where provided. 
 - Training was performed using GPU acceleration.
 - Results may vary slightly depending on hardware and random initialization.
